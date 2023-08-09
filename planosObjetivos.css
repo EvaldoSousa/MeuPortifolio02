@@ -1,0 +1,161 @@
+.sobre {
+    width: 100%;
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    transition: 0.5s;
+  }
+
+.text1{
+  text-align: left;
+}
+
+.text2{
+  text-align: right;
+}
+
+  
+  .sobre .container-sobre {
+    position: relative;
+    width: 1000px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .sobre .container-sobre .caixa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .sobre .container-sobre .caixa .img-caixa {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  
+  .sobre .container-sobre .caixa .img-caixa img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sobre .container-sobre .caixa .texto {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+    flex-direction: column;
+  }
+  
+  .sobre .container-sobre .caixa .texto h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .sobre .container-sobre .caixa .texto p {
+    width: 100%;
+    padding: 10%;
+    color: white;
+    font-size: 18px;
+    /* margin: 8px 0; */
+    font-weight: 300;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .sobre .container-sobre .caixa .texto button {
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 5px 10px;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .sobre .container-sobre .caixa .texto button:hover {
+    background: rgba(255, 255, 255, 0.253);
+  }
+  
+  .sobre .container-sobre .planos {
+    pointer-events: none;
+  }
+  
+  .sobre .container-sobre.sobre-ativado .planos .texto {
+    pointer-events: initial;
+  }
+  
+  .sobre .container-sobre .planos .texto {
+    top: 100%;
+  }
+  
+  .sobre .container-sobre.sobre-ativado .planos .texto {
+    top: 0;
+  }
+  
+  .sobre .container-sobre .planos .img-caixa {
+    top: -100%;
+    transition: 0.5s;
+  }
+  
+  .sobre .container-sobre.sobre-ativado .planos .img-caixa {
+    top: 0;
+  }
+  
+  .sobre .container-sobre .inicio .texto {
+    top: 0;
+  }
+  
+  .sobre .container-sobre.sobre-ativado .inicio .texto {
+    top: 100%;
+  }
+  
+  .sobre .container-sobre .inicio .img-caixa {
+    top: 0;
+    transition: 0.5s;
+  }
+  
+  .sobre .container-sobre.sobre-ativado .inicio .img-caixa {
+    top: -100%;
+  }
+  
+  @media (max-width: 1024px) {
+    .sobre .container-sobre {
+      max-width: 400px;
+      height: 600px;
+    }
+  
+    .sobre .container-sobre .caixa .img-caixa {
+      display: none;
+    }
+  
+    .sobre .container-sobre .caixa .texto {
+      width: 100%;
+    }
+  }

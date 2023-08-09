@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: calc(100% / 3);
+  object-fit: cover;
+  margin-right: 10px; /* Adicione um espaçamento entre as imagens */
+}
